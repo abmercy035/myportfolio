@@ -1,9 +1,10 @@
 import React from 'react'
+// import "tailwind"
 
 
 const TestComponent = () => {
   return (
-    <h1 className='bg-red-600 text-white underline'>Testing Tailwind CSS!</h1>
+    <h1 className='text-3xl font-bold underline black'>Testing Tailwind CSS!</h1>
   )
 }
 
