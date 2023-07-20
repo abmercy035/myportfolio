@@ -1,7 +1,14 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
+import TestComponent from '../components/TestComponent';
 
-export default function MainLayout() {
+export default function MainLayout({ children }) {
+console.log(children);
   return (
-    <div>MainLayout</div>
+    <div>
+      <TestComponent />
+      { children }
+      <Outlet />
+    </div>
   )
 }
