@@ -1,7 +1,5 @@
 import React from 'react'
 
-export default function Aside() {
-  return (
-    <div>Aside</div>
-  )
+export default function Aside({ children }) {
+  return <div>{children}</div>
 }
