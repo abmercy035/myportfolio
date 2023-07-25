@@ -4,7 +4,7 @@ import React from 'react'
 
 const TestComponent = () => {
   return (
-    <h1 className='text-3xl font-bold underline black'>Testing Tailwind CSS!</h1>
+    <h1 className= "bg-red-950 text-center text-white">Testing Tailwind CSS!</h1>
   )
 }
 
