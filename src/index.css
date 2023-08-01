@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.Chainewz {
+    color: #000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 1px;
+    padding-left: 1px;
+    letter-spacing: 3.25px;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
