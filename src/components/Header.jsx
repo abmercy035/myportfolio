@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       <ul className='flex justify-center space-x-6'>
         <li>
-          <Link to="#">Home</Link>  
+          <Link to="/">Home</Link>  
         </li>
         <li>
           <Link to="/NewsPage">News</Link>

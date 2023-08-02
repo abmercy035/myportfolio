@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function NewsPage() {
  return (
-   
-    <div>NewsPage</div>
+    <div className="bg-red-800">NewsPage</div>
   )
 }
