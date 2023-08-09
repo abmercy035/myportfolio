@@ -14,3 +14,84 @@
     letter-spacing: 3.25px;
     text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
+
+.menu {
+    padding-left: 1rem;
+    margin-top: 1rem;
+    color: #000;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+/* .search-box {
+    max-width: 100vh;
+    max-height: 50vh;
+    margin: 0px auto;
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+
+.search-input{
+    display: block;
+    border: 1px solid #ddd;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+    padding: 13px;
+    padding-left: 45px;
+    border-radius: 25px;
+    width: 100%;
+    transition: box-shadow 100ms;
+    outline: none;
+}
+
+.search-icon {
+    width: 20px;
+    opacity: .5;
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    ;
+} */
+
+.search-box {
+    display: flex;
+    max-width: 100vh;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.search-input {
+    display: block;
+    border: 1px solid #ddd;
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    padding: 13px;
+    padding-left: 45px;
+    border-radius: 25px;
+    height: 2rem;
+    width: 100%;
+    transition: box-shadow 100ms;
+    outline: none;
+}
+
+.search-input:hover {
+    border: 1px solid #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.05),
+        0 0 2px rgba(0, 0, 0, 0.55),
+        0 0 3px rgba(0, 0, 0, 0.5),
+        0 0 4px rgba(0, 0, 0, 0.5),
+        0 0 5px rgba(0, 0, 0, 0.5),
+        0 0 4px rgba(0, 0, 0, 0.5),
+        0 0 5px rgba(0, 0, 0, 0.5)
+}
+
+.search-icon {
+    width: 2em;
+    height: 2em;
+    opacity: .4;
+     
+}

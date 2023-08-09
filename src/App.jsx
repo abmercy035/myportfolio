@@ -2,6 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './index.css'
 
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import HomeLayout from './layouts/HomeLayout'
 import NotFound from './pages/NotFound'
 import NewsLayout from './layouts/NewsLayout'
