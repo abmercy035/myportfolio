@@ -1,0 +1,39 @@
+.background-wrapper {
+  background-color: rgb(0, 0, 0);
+}
+.background-intro {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  min-height: 100px;
+}
+.intro-heading {
+  font-size: 25px;
+}
+.intro-text {
+  max-width: 600px;
+  font-size: 15px;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+.vertical-timeline-element-content {
+  background-color: tomato;
+  background-color: #121212;
+  box-shadow: none;
+}
+/* .vertical-timeline-element--education {
+  background-color: #121212;
+} */
+.company-name {
+  color: tomato;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.vertical-timeline-element-content p {
+  font-family: sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+  font-size: 13px;
+  word-spacing: -1px;
+}

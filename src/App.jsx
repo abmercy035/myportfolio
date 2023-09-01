@@ -2,21 +2,23 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './index.css'
 
-import HomeLayout from './layouts/HomeLayout'
-import NotFound from './pages/NotFound'
-import NewsLayout from './layouts/NewsLayout'
+import HomePage from './pages/Home'
+import Projects from './pages/projects/Projects'
+import Contact from './pages/contact/contact'
+import Experience from './pages/experiences/Experience'
+import Background from './pages/backgrounds/Background'
 
 function App() {
   return (
-    <div>
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<HomeLayout />}></Route>
-          <Route exact path="/NewsPage" element={<NewsLayout />}></Route>
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={ <HomePage /> }></Route>
+        <Route exact path="/projects" element={ <Projects /> }></Route>
+        <Route exact path="/contact" element={ <Contact /> }></Route>
+        <Route exact path="/experince" element={ <Experience /> }></Route>
+        <Route exact path="/background" element={ <Background /> }></Route>
+      </Routes>
+    </Router>
   )
 }
 

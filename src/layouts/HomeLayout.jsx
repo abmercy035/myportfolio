@@ -7,16 +7,11 @@ import Footer from '../components/Footer'
 export default function HomeLayout() {
   return (
     <>
-      <Header />
-      <NavBar />
       <main className="layout">
-        <Aside>Home Aside</Aside>
         <section className="section">
           <HomePage />
         </section>
-        <article> Home Article</article>
       </main>
-      <Footer />
     </>
   )
 }
