@@ -4,7 +4,7 @@ import './index.css'
 
 import HomePage from './pages/Home'
 import Projects from './pages/projects/Projects'
-import Contact from './pages/contact/contact'
+import Contact from './pages/contact/Contact'
 import Experience from './pages/experiences/Experience'
 import Background from './pages/backgrounds/Background'
 
