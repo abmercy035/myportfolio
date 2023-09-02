@@ -47,18 +47,16 @@ export default function Contact() {
   };
 
   return (
-
     <div className='contact-page column gap20'>
       <GoBackHistoryBar />
       <div className="form-message-popup" ref={ formMsg }>
-        Message Sent Lorem ipsum dolor sit, amet consectetur adipisicing elit.
       </div>
       <div className='contact-intro column jcc aic gap10'>
         <div className="intro-header jcc">
           Contact Me
         </div>
         <div className="intro-text jcc aic p10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illo, earum cumque modi sapiente ad tenetur minus perferendis placeat molestiae.
+          Thank you for reaching out! Feel free to send me a message using the form below. I look forward to connecting with you.
         </div>
       </div>
       <div className="contact-wrapper column jcc aic " >

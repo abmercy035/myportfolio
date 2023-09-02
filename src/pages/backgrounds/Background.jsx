@@ -19,9 +19,13 @@ export default function Background() {
           Background Timeline
         </div>
         <div className="background-page-intro-text">
-          Educational background, alongside my achievements and services over the years as a programmer, reflect a journey marked by a relentless pursuit of excellence and a deep commitment to contributing to the betterment of society.
-          <br />
-          Beyond my technical accomplishments, I have actively sought opportunities to give back to society through volunteer work, mentorship, and collaborative initiatives that leverage technology to address pressing societal challenges.</div>
+          <p>
+            Educational background, alongside my achievements and services over the years as a programmer, reflect a journey marked by a relentless pursuit of excellence and a deep commitment to contributing to the betterment of society.
+          </p>
+          <p>
+          Beyond my technical accomplishments, I have actively sought opportunities to give back to society through volunteer work, mentorship, and collaborative initiatives that leverage technology to address pressing societal challenges.
+          </p>
+          </div>
       </div>
       <div className="background-wrapper">
         <VerticalTimeline lineColor="white">

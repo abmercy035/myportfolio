@@ -27,7 +27,7 @@
   font-size: 30px;
 }
 .background-page-intro-text {
-  font-size: 12px;
+  font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   max-width: 1000px;
   padding: 10px;
@@ -35,7 +35,15 @@
   flex-direction: column;
   gap: 10px;
 }
-
+.background-page-intro-text p {
+  width: 100%;
+  min-width: 200px;
+  word-wrap: break-word;
+  text-align: justify;
+  hyphens: auto;
+  padding: 0 10px;
+  font-size: 14px;
+}
 .background-wrapper {
   background-color: rgb(0, 0, 0);
 }

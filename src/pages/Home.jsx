@@ -37,7 +37,7 @@ export default function HomePage() {
           </div>
           <div className="profile-name-wrapper">
             <span className="profile-name">Samuel Abraham</span>
-            <span className="profile-bio"> Mern-stack|Developer|Innovator|Engineer{/* | <span className="focus">Founder@Learnard</span>*/ } | Wiki-Editor</span>
+            <span className="profile-bio"> Mern-stack | Developer | Innovator | Engineer{/* | <span className="focus">Founder@Learnard</span>*/ } | Wiki-Editor</span>
           </div>
           <div className="profile-social-wrapper">
             <div className="profile-social-accounts">

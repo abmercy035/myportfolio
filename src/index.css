@@ -41,19 +41,17 @@
   position: fixed;
   height: 40%;
   z-index: 99;
-  width: 35px;
+  width: 45px;
   transform: translateY(calc(50%));
   background: var(--nav-background);
   display: flex;
   top: calc(50% - 40%);
   align-items: center;
   justify-content: center;
-  /* From https://css.glass */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   backdrop-filter: blur(1.9px);
   -webkit-backdrop-filter: blur(1.9px);
-  color: white;
 }
 
 .left-nav {
@@ -66,7 +64,6 @@
 :is(.left-nav, .right-nav) ul {
   height: 100%;
   width: 100%;
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,9 +88,8 @@
 }
 
 :is(.left-nav, .right-nav) ul li .left-nav-icons {
-  height: 25px;
-  width: 25px;
-  color: white;
+  height: 30px;
+  width: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,28 +129,29 @@
 }
 .profile-bio {
   color: white;
-  font-size: 12px;
-  letter-spacing: -0.1px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
-  word-spacing: -3px;
+  word-spacing: -1px;
 }
 .center .my-profile-wrapper .profile-img-wrapper {
-  width: 240px;
+  width: 350px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
 }
 .center .my-profile-wrapper .profile-img-wrapper .profile-img {
-  width: 240px;
-  height: 240px;
+  width: 300px;
+  height: 300px;
   object-fit: contain;
   border-radius: 100rem;
 }
 
 .profile-social-wrapper {
   width: 100%;
-  height: 50px;
+  height: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,17 +163,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 .profile-social-wrapper .profile-social-accounts .social-account-icon {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .profile-action-btns-wrapper {
-  height: 30px;
+  height: 40px;
   width: 100%;
   color: royalblue;
   display: flex;
@@ -185,7 +182,6 @@
   justify-content: center;
 }
 .profile-action-btns-wrapper .profile-action-btns {
-  height: 30px;
   width: calc(100% - 70px);
   cursor: pointer;
   max-width: 400px;
@@ -195,22 +191,74 @@
   justify-content: center;
 }
 .profile-action-btns-wrapper .profile-action-btns .action-btns {
-  height: 40px;
-  width: 45%;
+  height: 50px;
+  width: 50%;
   display: flex;
   align-items: center;
   gap: 5px;
   color: whitesmoke;
   justify-content: center;
-  font-size: 12px;
+  font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: rgba(65, 105, 225, 0.57);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.9px);
-  -webkit-backdrop-filter: blur(1.9px);
   border: 1px solid rgba(65, 105, 225, 0.18);
 }
 
+@media screen and (max-width: 568px) {
+  .profile-name {
+    font-size: 22px;
+  }
+  .profile-bio {
+    font-size: 12px;
+    letter-spacing: -0.1px;
+    word-spacing: -2px;
+    text-align: center;
+  }
+  .center .my-profile-wrapper .profile-img-wrapper {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  .center .my-profile-wrapper .profile-img-wrapper .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+  }
+  
+.profile-social-wrapper {
+  height: 50px;
+}
+.profile-social-wrapper .profile-social-accounts {
+  gap: 10px;
+}
+.profile-social-wrapper .profile-social-accounts .social-account-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.profile-action-btns-wrapper {
+  height: 30px;
+}
+.profile-action-btns-wrapper .profile-action-btns .action-btns {
+  height: 45px;
+  width: 45%;
+  gap: 8px;
+  font-size: 12px;
+}
+
+
+.left-nav,
+.right-nav {
+  position: fixed;
+  height: 35%;
+  width: 40px;
+}
+
+:is(.left-nav, .right-nav) ul li .left-nav-icons {
+  height: 24px;
+  width: 24px;
+}
+
+}
 .focus {
   color: rgb(137, 164, 244);
   /* color: tomato; */
