@@ -6,10 +6,10 @@ import {
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
 import "./background.css"
-import chainnewz_icon from "../../assets/Ellipse 1.png"
-import tiffany_icon from "../../assets/tiffany.jpg"
+import hivemind from "../../assets/hivemind.png"
+import beautwealt from "../../assets/beautwealt.jpg"
 import gdsc_logo from "../../assets/gdsc.png"
-import giggles_icon from "../../assets/giggles.jpg"
+import lasu_logo from "../../assets/lasu.jpg"
 export default function Background() {
   return (
     <div className='background- column gap20'>
@@ -19,12 +19,28 @@ export default function Background() {
           Background Timeline
         </div>
         <div className="intro-text">
-          My background details, alongside my achievements and services over the years as a programmer, reflect a journey marked by a relentless pursuit of excellence and a deep commitment to contributing to the betterment of society.
+           Educational background, alongside my achievements and services over the years as a programmer, reflect a journey marked by a relentless pursuit of excellence and a deep commitment to contributing to the betterment of society.
           <br />
           Beyond my technical accomplishments, I have actively sought opportunities to give back to society through volunteer work, mentorship, and collaborative initiatives that leverage technology to address pressing societal challenges.</div>
       </div>
       <div className="experience-wrapper">
         <VerticalTimeline lineColor="white">
+          <VerticalTimelineElement
+            className="vertical-timeline-element--background"
+            date="July 2023"
+            iconStyle={ { background: 'royalblue', color: '#e79595' } }
+            icon={ <img src={ beautwealt } className="vertical-timeline-element-icon" /> }
+          >
+            <h3 className="vertical-timeline-element-title" style={ { color: 'royalblue' } }>
+              Icon of the Year 2023
+            </h3>
+            <h5 className="company-name p5">
+              Beautwealt Electronics
+            </h5>
+            <p>
+              Awarded in the innovation class (tech & robotics) by Beautwealt Electronics, recognizing outstanding contributions to technology and robotics innovation.
+            </p>
+          </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--background"
             date="July 2023"
@@ -64,17 +80,29 @@ export default function Background() {
             className="vertical-timeline-element--background"
             date="2022 - 2023"
             iconStyle={ { background: '#c0bd09', color: '#000' } }
-            icon={ <img src={ giggles_icon } className="vertical-timeline-element-icon" /> }
+            icon={ <img src={ hivemind } className="vertical-timeline-element-icon" /> }
           >
             <h3 className="vertical-timeline-element-title" style={ { color: '#c0bd09' } }>Hive Mind</h3>
-            <h5>Fullstack Software Engineering Immersive</h5>
+            <h5>Full Stack Software Developer Professional Certification</h5>
+            <p>
+              An intensive software development program, where I learnt proficiency in key frontend technologies, including HTML, CSS, and JavaScript.
+              <br />
+              I was also taught version control using Git, for effective collaboration and code management.
+              <br />
+              Then moved to advanced frontend development expertise by learning advanced JavaScript and React, enabling me to build dynamic and interactive web applications.
+              <br />
+              We were also taught backend development with Node.js and Express, and through hands-on practicals, we gained proficiency in working with MongoDB for database management.
+              <br />
+              By implementing authorization and authentication techniques, including the use of bcrypt for password hashing, rate limiting, and JWT (JSON Web Tokens) for secure authentication, we were able to build standard applications.
+            </p>
+
           </VerticalTimelineElement>
 
           <VerticalTimelineElement
             className="vertical-timeline-element--background"
             date="2020 - Present"
             iconStyle={ { background: '#c0bd09', color: '#000' } }
-            icon={ <img src={ giggles_icon } className="vertical-timeline-element-icon" /> }
+            icon={ <img src={ lasu_logo } className="vertical-timeline-element-icon" /> }
           >
             <h3 className="vertical-timeline-element-title" style={ { color: '#c0bd09' } }>Bachelor's Degree in Chemical and Polymer Engineering</h3>
             <h5>Lagos State University (LASU, EPE CAMPUS)</h5>

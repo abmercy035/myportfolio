@@ -74,7 +74,6 @@ export default function Experience() {
        <br />
        Introduced students to Microsoft Word and Microsoft PowerPoint, ensuring they gained proficiency in these essential office productivity tools.
        Conducted hands-on lessons covering document creation, formatting, and effective presentation design.
-
       </p>
      </VerticalTimelineElement>
      <VerticalTimelineElement

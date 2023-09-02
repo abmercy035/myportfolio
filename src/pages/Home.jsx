@@ -19,12 +19,13 @@ export default function HomePage() {
     <div className='home-page'>
       <div className="left-nav">
         <NavBar icon_1={ skills_icon }
+          action_1={ () => navigate("/about-me") }
           action_2={ () => navigate("/projects") }
           icon_2={ projects_icon } icon_3={ skills_icon } />
       </div>
       <div className="right-nav">
         <NavBar icon_1={ briefcase_icon }
-          action_3={ () => navigate("/contact") }
+          action_3={ () => navigate("/contact-me") }
           action_2={ () => navigate("/background") }
           action_1={ () => navigate("/experince") }
           icon_2={ background_icon } icon_3={ mail } />
