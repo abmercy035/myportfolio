@@ -4,11 +4,11 @@ import linkedin_icon from "../assets/linkedin-in.svg"
 import twitter_icon from "../assets/twitter.svg"
 import instagram_icon from "../assets/instagram.svg"
 import git_icon from "../assets/github.svg"
-import home_icon from "../assets/home.svg"
+import bulb_icon from "../assets/bulb.svg"
 import projects_icon from "../assets/project-diagram.svg"
 import link_icon from "../assets/link_02.svg"
 import mail from "../assets/mail.svg"
-import skills_icon from "../assets/user.svg"
+import about_icon from "../assets/user.svg"
 import briefcase_icon from "../assets/briefcase.svg"
 import background_icon from "../assets/backgrounds.png"
 import { useNavigate } from 'react-router-dom'
@@ -18,10 +18,10 @@ export default function HomePage() {
   return (
     <div className='home-page'>
       <div className="left-nav">
-        <NavBar icon_1={ skills_icon }
+        <NavBar icon_1={ about_icon }
           action_1={ () => navigate("/about-me") }
           action_2={ () => navigate("/projects") }
-          icon_2={ projects_icon } icon_3={ skills_icon } />
+          icon_2={ projects_icon } icon_3={ bulb_icon } />
       </div>
       <div className="right-nav">
         <NavBar icon_1={ briefcase_icon }
@@ -37,7 +37,7 @@ export default function HomePage() {
           </div>
           <div className="profile-name-wrapper">
             <span className="profile-name">Samuel Abraham</span>
-            <span className="profile-bio">Mern | Frontend | Backend | React | Node | Express</span>
+            <span className="profile-bio"> Mern-stack|Developer|Innovator|Engineer{/* | <span className="focus">Founder@Learnard</span>*/ } | Wiki-Editor</span>
           </div>
           <div className="profile-social-wrapper">
             <div className="profile-social-accounts">

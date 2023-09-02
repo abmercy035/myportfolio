@@ -12,18 +12,18 @@ import gdsc_logo from "../../assets/gdsc.png"
 import lasu_logo from "../../assets/lasu.jpg"
 export default function Background() {
   return (
-    <div className='background- column gap20'>
+    <div className='background-page'>
       <GoBackHistoryBar />
-      <div className="background-intro column jcc aic gap50 ">
-        <div className="intro-heading">
+      <div className="background-page-intro">
+        <div className="background-page-intro-header">
           Background Timeline
         </div>
-        <div className="intro-text">
-           Educational background, alongside my achievements and services over the years as a programmer, reflect a journey marked by a relentless pursuit of excellence and a deep commitment to contributing to the betterment of society.
+        <div className="background-page-intro-text">
+          Educational background, alongside my achievements and services over the years as a programmer, reflect a journey marked by a relentless pursuit of excellence and a deep commitment to contributing to the betterment of society.
           <br />
           Beyond my technical accomplishments, I have actively sought opportunities to give back to society through volunteer work, mentorship, and collaborative initiatives that leverage technology to address pressing societal challenges.</div>
       </div>
-      <div className="experience-wrapper">
+      <div className="background-wrapper">
         <VerticalTimeline lineColor="white">
           <VerticalTimelineElement
             className="vertical-timeline-element--background"

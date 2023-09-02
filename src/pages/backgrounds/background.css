@@ -1,21 +1,45 @@
+.background-page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  gap: 20px;
+  position: relative;
+}
+
+.background-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.background-page-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.background-page-intro-header {
+  font-size: 30px;
+}
+.background-page-intro-text {
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 1000px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .background-wrapper {
   background-color: rgb(0, 0, 0);
 }
-.background-intro {
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  min-height: 100px;
-}
-.intro-heading {
-  font-size: 25px;
-}
-.intro-text {
-  max-width: 600px;
-  font-size: 15px;
-  padding-bottom: 20px;
-  text-align: justify;
-}
+
 .vertical-timeline-element-content {
   background-color: tomato;
   background-color: #121212;
@@ -33,7 +57,7 @@
   font-family: sans-serif;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5;
+  line-height: 1.5;
   font-size: 13px;
   word-spacing: -1px;
 }

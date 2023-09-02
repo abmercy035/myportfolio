@@ -11,14 +11,16 @@ import tiffany_icon from "../../assets/tiffany.jpg"
 import giggles_icon from "../../assets/giggles.jpg"
 export default function Experience() {
  return (
-  <div className='experience- column gap20'>
+  <div className='experience-page'>
    <GoBackHistoryBar />
-   <div className="experience-intro column gap20">
-    <div className="intro-heading">
-     Work experiences
+   <div className="experience-page-intro">
+    <div className="experience-page-intro-header">
+     Work Experiences
     </div>
-    <div className="intro-text">
-     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo dolorem quasi deserunt rerum, aliquid magnam labore nobis ullam sit sapiente.
+    <div className="experience-page-intro-text">
+     <p>
+      A passionate Fullstack Developer with expertise in JavaScript. My journey is defined by a love for continuous learning, sharing knowledge, and a commitment to building a better society through technology. Let's embark on this journey of innovation together.
+     </p>
     </div>
    </div>
    <div className="experience-wrapper">
@@ -43,13 +45,13 @@ export default function Experience() {
      <VerticalTimelineElement
       className="vertical-timeline-element--education"
       date="May 2023 - Aug 2023"
-      iconStyle={ { background: 'skyblue'} }
+      iconStyle={ { background: 'skyblue' } }
       icon={ <img src={ tiffany_icon } className="vertical-timeline-element-icon" /> }
      >
       <h3 className="vertical-timeline-element-title" style={ { color: 'skyblue' } }>
        React Frontend Developer
       </h3>
-      <h5  className="company-name p5">Tiffany E-commerce Website</h5>
+      <h5 className="company-name p5">Tiffany E-commerce Website</h5>
       <p>
        As a frontend designer for the Tiffany e-commerce website, I played a pivotal role in creating an engaging and user-friendly online shopping platform. Working collaboratively within a team, I contributed to various aspects of the project, including the product page, dashboard, API integration and data display, file module structuring, and overall project layout structure.
       </p>
@@ -65,7 +67,7 @@ export default function Experience() {
       <h3 className="vertical-timeline-element-title" style={ { color: '#efca65' } }>
        Programming Teacher
       </h3>
-      <h5  className="company-name p5">Giggles montessori, Lagos Nigeria</h5>
+      <h5 className="company-name p5">Giggles montessori, Lagos Nigeria</h5>
       <p>
        Introduced students to the fundamentals of Scratch programming, enabling them to create interactive and engaging multimedia projects.
        <br />
@@ -75,15 +77,6 @@ export default function Experience() {
        Introduced students to Microsoft Word and Microsoft PowerPoint, ensuring they gained proficiency in these essential office productivity tools.
        Conducted hands-on lessons covering document creation, formatting, and effective presentation design.
       </p>
-     </VerticalTimelineElement>
-     <VerticalTimelineElement
-      className="vertical-timeline-element--education"
-      date="2022 - 2023"
-      iconStyle={ { background: '#c0bd09', color: '#000' } }
-      icon={ <img src={ giggles_icon } className="vertical-timeline-element-icon" /> }
-     >
-      <h3 className="vertical-timeline-element-title" style={ { color: '#c0bd09' } }>Hive Mind</h3>
-      <h5>Fullstack Software Engineering Immersive</h5>
      </VerticalTimelineElement>
     </VerticalTimeline>
    </div>

@@ -1,18 +1,47 @@
-.experience-wrapper {
-  background-color: rgb(0, 0, 0);
-}
-.experience-intro {
+.experience-page {
+  height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  gap: 20px;
+  position: relative;
+}
+
+.experience-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experience-page-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.experience-page-intro-header {
+  font-size: 30px;
+}
+.experience-page-intro-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 1000px;
   padding: 10px;
-  text-align: center;
-  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.intro-heading {
-  font-size: 25px;
-}
-.intro-text {
-  font-size: 15px;
-  padding-bottom: 20px;
+.experience-page-intro-text p {
+  width: 100%;
+  min-width: 200px;
+  word-wrap: break-word;
+  text-align: justify;
+  hyphens: auto;
+  padding: 0 10px;
+  font-size: 14px;
 }
 .vertical-timeline-element-content {
   background-color: tomato;
@@ -29,7 +58,7 @@
   font-family: sans-serif;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
-    line-height: 1.5;
+  line-height: 1.5;
   font-size: 13px;
   word-spacing: -1px;
 }

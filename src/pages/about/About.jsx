@@ -1,6 +1,4 @@
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { useNavigate } from 'react-router-dom'
 import "./about.css"
 import genztechies_icon from "../../assets/genztechies.png"
 import I4G_icon from "../../assets/i4g.png"
@@ -22,83 +20,79 @@ import GoBackHistoryBar from '../../components/GoBackHistoryBar'
 
 export default function About() {
   return (
-    <div className='about-page column gap20'>
+    <div className='about-page'>
       <GoBackHistoryBar />
-      <div className='about-intro column jcc aic gap30'>
-        <div className="intro-header jcc">
+      <div className='about-page-intro'>
+        <div className="about-page-intro-header">
           About Me
         </div>
-        <div className="intro-text column jcic gap10 p10">
+        <div className="about-page-intro-text">
           <p>
-            My name is Abraham Samuel Bamidele, A Fullstack Developer with Javascript.
-            A strong desire to learn new things and a primary focus on acquiring necessary skills for personal
-            development. an avid reader who spends a lot of time reading self-help, career, financial development, and
-            spiritual book collections, Furthermore, very enthusiastic about working out and maintaining my fitness.
+            I'm Abraham Samuel Bamidele, and I'm passionate about the world of technology and programming. As a Fullstack Developer specializing in JavaScript, I thrive on the ever-evolving nature of this field. I believe in the power of continuous learning and have made it my primary focus to acquire the skills necessary for my personal growth and development.
+          </p>
+          {/* <p>Driven by my love for moral and decent society and generation. I firmly believe that knowledge is most valuable when it's shared and imparted, and I take great joy in helping others understand complex concepts and navigate the world of programming.</p> */ }
+          <p>
+            In a world that relies on technology more than ever, I am committed to using my skills and passion for programming to create meaningful change and foster a culture of continuous learning and knowledge dissemination. May God help me on this exciting journey of discovery and innovation!
+          </p>
+          <p>
+            <h3>My Interest Includes</h3>
+            <div>
+              Software Engineering | Complex Problem-solving | Client Satisfaction | Team Collaboration | Continuous Improvement
+            </div>
           </p>
         </div>
-        <div className="about-sections-wrapper">
-          <div className="about-sections-header">TOP EXPERTISE</div>
-          <div className="expertise-wrapper">
-            <div className="about-sections">
-              <div className="sec-title">Frontend Development</div>
-              <div className="skills">
-                <img src={ html_icon } alt="" />
-                <img src={ css_icon } alt="" />
-                <img src={ js_icon } alt="" />
-                <img src={ react_icon } alt="" />
-              </div>
+      </div>
+      <div className="about-sections-wrapper">
+        <div className="about-sections-header">TOP EXPERTISE</div>
+        <div className="expertise-wrapper">
+          <div className="about-sections">
+            <div className="sec-title">Frontend Development</div>
+            <div className="skills">
+              <img src={ html_icon } alt="" />
+              <img src={ css_icon } alt="" />
+              <img src={ js_icon } alt="" />
+              <img src={ react_icon } alt="" />
             </div>
-            <div className="about-sections">
-              <div className="sec-title">Backend Development</div>
-              <div className="skills">
-                <img src={ nodejs_icon } alt="" />
-                <img src={ express_icon } alt="" />
-              </div>
+          </div>
+          <div className="about-sections">
+            <div className="sec-title">Backend Development</div>
+            <div className="skills">
+              <img src={ nodejs_icon } alt="" />
+              <img src={ express_icon } alt="" />
             </div>
-            <div className="about-sections">
-              <div className="sec-title">Database Management</div>
-              <div className="skills">
-                <img src={ mongoose_icon } alt="" />
-                <img src={ mongodb_icon } alt="" />
-              </div>
+          </div>
+          <div className="about-sections">
+            <div className="sec-title">Database Management</div>
+            <div className="skills">
+              <img src={ mongoose_icon } alt="" />
+              <img src={ mongodb_icon } alt="" />
             </div>
-            <div className="about-sections">
-              <div className="sec-title">Version Control</div>
-              <div className="skills">
-                <img src={ git_icon } alt="" />
-              </div>
+          </div>
+          <div className="about-sections">
+            <div className="sec-title">Version Control</div>
+            <div className="skills">
+              <img src={ git_icon } alt="" />
             </div>
-            <div className="about-sections">
-              <div className="sec-title">Security and Authentication</div>
-              <div className="skills">
-                <img src={ bcrypt_icon } alt="" />
-                <img src={ jwt_icon } alt="" />
-              </div>
+          </div>
+          <div className="about-sections">
+            <div className="sec-title">Security and Authentication</div>
+            <div className="skills">
+              <img src={ bcrypt_icon } alt="" />
+              <img src={ jwt_icon } alt="" />
             </div>
           </div>
         </div>
-        <div className="about-sections-wrapper">
-          <div className="about-sections-header">SOFT SKILLS</div>
-          <div className="expertise-wrapper">
-            <div className="about-sections">
-              <div className="skills">
+      </div>
 
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="about-sections-wrapper">
-          <div className="about-sections-header">ACTIVE COMMUNITIES</div>
-          <div className="expertise-wrapper">
-            <div className="about-sections">
-              <div className="skills">
-                <img src={ gdsc_icon } alt="" />
-                <img src={ beautwealt } alt="" />
-                <img src={ I4G_icon } alt="" />
-                <img src={ wikimedia } alt="" />
-                <img src={ genztechies_icon } alt="" />
-              </div>
-            </div>
+      <div className="about-sections-wrapper">
+        <div className="about-sections-header">COMMUNITY CONSTELLATIONS</div>
+        <div className="community-wrapper">
+          <div className="community">
+            <img src={ gdsc_icon } alt="" />
+            <img src={ beautwealt } alt="" />
+            <img src={ I4G_icon } alt="" />
+            <img src={ wikimedia } alt="" />
+            <img src={ genztechies_icon } alt="" />
           </div>
         </div>
       </div>

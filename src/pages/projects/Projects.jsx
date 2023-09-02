@@ -17,67 +17,62 @@ export default function Projects() {
   return (
     <>
       <div className='projects-page'>
-        <div className="project-page-under-cover">
-          <GoBackHistoryBar />
-          <div className="right-nav">
-            <NavBar icon_1={ javascript_icon }
-              icon_2={ react_icon } icon_3={ nodejs_icon } />
+        <GoBackHistoryBar />
+        <div className="right-nav">
+          <NavBar icon_1={ javascript_icon }
+            icon_2={ react_icon } icon_3={ nodejs_icon } />
+        </div>
+        <div className="projects-page-intro">
+          <div className="projects-page-intro-header">My Projects</div>
+          <div className="projects-page-intro-text">
+            <p>
+              My true passion lies in programming, where I see it as a means to create innovative applications that can contribute to a morally upright, decent society, and a better generation. I have undertaken several projects that reflect my dedication to this cause. While I've worked on numerous initiatives, I want to emphasize that my practical experience extends beyond the projects listed here.
+            </p>
+            <p>
+              I find immense satisfaction in building software solutions that make a significant impact, especially through knowledge management and sharing. My goal is to ensure that appropriate and valuable information reaches the right people, ultimately enhancing the lives of those who benefit from it, and also helping others grasp complex concepts and navigate the programming world.        </p>
           </div>
-          <div className="project-intro">
-            <div className="page-title">My Projects</div>
-            <div>
-              <span>
-                Hello, glad you are here to see the projects i built.
-              </span>
-              <span>
-                Projects have built are more than the list shown here but to just let you know I have a good concept and hands on practical on the  title I claimed to be.
-                <br /> Project showing private are either a start-up or a client's project, I have decided to keep its' source code private
-                <br />
-              </span>
+        </div>
+        <div className="projects-wrapper">
+          <div className="projects-section">
+            <div className="project-header">
+              JAVASCRIPT
+            </div>
+            <div className="project-details">
+              Projects built using HTML, CSS, and Vanilla Javascript.
+            </div>
+            <div className="projects">
+              <ProjectCard img={ img1 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
+
             </div>
           </div>
-          <div className="projects-wrapper">
-            <div className="projects-section">
-              <div className="project-header">
-                JAVASCRIPT
-              </div>
-              <div className="project-details">
-                Projects built using HTML, CSS, and Vanilla Javascript.
-              </div>
-              <div className="projects">
-                <ProjectCard img={ img1 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
-
-              </div>
+          <div className="projects-section" id="react">
+            <div className="project-header">
+              REACT
             </div>
-            <div className="projects-section" id="react">
-              <div className="project-header">
-                REACT
-              </div>
-              <div className="project-details">
-                Projects built using HTML, CSS, and React.Js.
-              </div>
-              <div className="projects">
-
-                <ProjectCard img={ img2 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
-                <ProjectCard img={ img1 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
-                <ProjectCard img={ img3 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
-                <ProjectCard img={ img1 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
-              </div>
+            <div className="project-details">
+              Projects built using HTML, CSS, and React.Js.
             </div>
-            <div className="projects-section">
-              <div className="project-header">
-                FULLSTACK(NODE)
-              </div>
-              <div className="project-details">
-                Projects are built using HTML, CSS, React.js and Node (Express, Mongodb incusive).
-              </div>
-              <div className="projects">
-                <ProjectCard img={ img2 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
-                <ProjectCard img={ img3 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
-                <ProjectCard img={ img1 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
+            <div className="projects">
+
+              <ProjectCard img={ img2 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
+              <ProjectCard img={ img1 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
+              <ProjectCard img={ img3 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
+              <ProjectCard img={ img1 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
+            </div>
+          </div>
+          <div className="projects-section">
+            <div className="project-header">
+              FULLSTACK(NODE)
+            </div>
+            <div className="project-details">
+              Projects are built using HTML, CSS, React.js and Node (Express, Mongodb incusive).
+            </div>
+            <div className="projects">
+              <ProjectCard img={ img2 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
+              <ProjectCard img={ img3 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
+              <ProjectCard img={ img1 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
 
 
-              </div>
             </div>
           </div>
         </div>
