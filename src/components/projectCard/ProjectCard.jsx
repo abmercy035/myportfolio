@@ -1,7 +1,7 @@
 import React from 'react'
 import link_icon from "../../assets/external_link.svg"
 import view_icon from "../../assets/eye.svg"
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import "./projectcard.css"
 export default function ProjectCard({ img, text, gitLink, liveLink }) {
  const navigate = useNavigate()
@@ -13,15 +13,18 @@ export default function ProjectCard({ img, text, gitLink, liveLink }) {
     <div className="card-name">{ text } </div>
    </div>
    <div className="card-action-wrapper">
-    <div className="card-actions" onClick={ () => navigate(liveLink) }>
-     View
-     <img src={ view_icon } alt="" />
-    </div>
-    <div className="card-actions" onClick={ () => navigate(gitLink) }>
-     source code
-     <img src={ link_icon } alt="" />
-
-    </div>
+    <Link to={ liveLink } target="_blank">
+     <div className="card-actions" >
+      View
+      <img src={ view_icon } alt="" />
+     </div>
+    </Link>
+    <Link to={ gitLink } target="_blank">
+     <div className="card-actions" >
+      source code
+      <img src={ link_icon } alt="" />
+     </div>
+    </Link>
    </div>
   </div>
  )

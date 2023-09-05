@@ -31,13 +31,13 @@ export default function HomePage() {
           icon_2={ background_icon } icon_3={ mail } />
       </div>
       <div className="center">
-        <div className="my-profile-wrapper">
+        <div className="my-profile-wrapper"> 
           <div className="profile-img-wrapper">
             <img src={ profile_img } alt="" className='profile-img' />
           </div>
           <div className="profile-name-wrapper">
             <span className="profile-name">Samuel Abraham</span>
-            <span className="profile-bio"> Mern-stack | Developer | Innovator | Engineer{/* | <span className="focus">Founder@Learnard</span>*/ } | Wiki-Editor</span>
+            <span className="profile-bio"> Mern-stack | Developer | Innovator | Engineer{/* | <span className="focus">Founder@Learnard</span>*/ } | Wiki-Editor | Scratch</span>
           </div>
           <div className="profile-social-wrapper">
             <div className="profile-social-accounts">

@@ -2,7 +2,7 @@ import React from 'react'
 import back_icon from "../../assets/long_left.svg"
 import link_icon from "../../assets/external_link.svg"
 import view_icon from "../../assets/eye.svg"
-import img1 from "../../assets/img1.png"
+import img1 from "../../assets/web-todoapp.png"
 import img2 from "../../assets/img2.png"
 import img3 from "../../assets/img3.webp"
 import nodejs_icon from "../../assets/node-js.svg"
@@ -14,12 +14,20 @@ import GoBackHistoryBar from '../../components/GoBackHistoryBar'
 import NavBar from '../../components/NavBar'
 import ProjectCard from '../../components/projectCard/ProjectCard'
 export default function Projects() {
+  const scroller = (section) => {
+    const scrollele = document.querySelector(section);
+    scrollele.scrollIntoView({ block: "center", behavior: "smooth" })
+  }
   return (
     <>
       <div className='projects-page'>
         <GoBackHistoryBar />
         <div className="right-nav">
-          <NavBar icon_1={ javascript_icon }
+          <NavBar
+            icon_1={ javascript_icon }
+            action_1={ () => scroller("#js") }
+            action_2={ () => scroller("#react") }
+            action_3={ () => scroller("#fullstack") }
             icon_2={ react_icon } icon_3={ nodejs_icon } />
         </div>
         <div className="projects-page-intro">
@@ -33,38 +41,36 @@ export default function Projects() {
           </div>
         </div>
         <div className="projects-wrapper">
-          <div className="projects-section">
-            <div className="project-header">
+          <div className="projects-section" >
+            <div className="project-header" >
               JAVASCRIPT
             </div>
-            <div className="project-details">
+            <div className="project-details" id="js">
               Projects built using HTML, CSS, and Vanilla Javascript.
             </div>
             <div className="projects">
-              <ProjectCard img={ img1 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
+              <ProjectCard img={ img2 } text={ "A simple Web Todo App (CRUD), with a persistent memeory using LocalStorage" } />
+              <ProjectCard img={ img2 } text={ "A simple Web Todo App (CRUD), with a persistent memeory using LocalStorage" } />
+              <ProjectCard img={ img2 } text={ "A simple Web Todo App (CRUD), with a persistent memeory using LocalStorage" } />
 
             </div>
           </div>
-          <div className="projects-section" id="react">
+          <div className="projects-section" >
             <div className="project-header">
               REACT
             </div>
-            <div className="project-details">
+            <div className="project-details" id="react">
               Projects built using HTML, CSS, and React.Js.
             </div>
             <div className="projects">
-
-              <ProjectCard img={ img2 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
-              <ProjectCard img={ img1 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
-              <ProjectCard img={ img3 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
-              <ProjectCard img={ img1 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
+              <ProjectCard img={ img1 } liveLink={ "http://localhost:5173/" } text={ "A simple responsive Web Todo App with CRUD operations and a persistent storage using LocalStorage" } />
             </div>
           </div>
-          <div className="projects-section">
+          <div className="projects-section" >
             <div className="project-header">
               FULLSTACK(NODE)
             </div>
-            <div className="project-details">
+            <div className="project-details" id="fullstack">
               Projects are built using HTML, CSS, React.js and Node (Express, Mongodb incusive).
             </div>
             <div className="projects">

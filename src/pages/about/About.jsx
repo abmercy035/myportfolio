@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import "./about.css"
 import genztechies_icon from "../../assets/genztechies.png"
+import scratch_icon from "../../assets/scratch.png"
 import I4G_icon from "../../assets/i4g.png"
 import gdsc_icon from "../../assets/gdsc.png"
 import css_icon from "../../assets/css.svg"
@@ -79,6 +80,12 @@ export default function About() {
             <div className="skills">
               <img src={ bcrypt_icon } alt="" />
               <img src={ jwt_icon } alt="" />
+            </div>
+          </div>
+          <div className="about-sections">
+            <div className="sec-title">Game Development</div>
+            <div className="skills">
+              <img src={ scratch_icon } alt="" />
             </div>
           </div>
         </div>

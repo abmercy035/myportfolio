@@ -82,22 +82,16 @@
   max-width: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
   gap: 40px;
   justify-items: center;
   padding: 10px;
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 550px) {
   .projects-wrapper .projects-section .projects {
-    width: 100%;
-    max-width: 300px;
-    display: grid;
-    margin: auto;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    justify-items: center;
-    padding: 10px;
   }
 }
