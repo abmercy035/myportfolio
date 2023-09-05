@@ -165,6 +165,9 @@
   justify-content: center;
   gap: 30px;
 }
+.profile-social-wrapper .profile-social-accounts a{
+  cursor: pointer;
+}
 .profile-social-wrapper .profile-social-accounts .social-account-icon {
   width: 30px;
   height: 30px;
@@ -223,41 +226,39 @@
     height: 200px;
     border-radius: 5px;
   }
-  
-.profile-social-wrapper {
-  height: 50px;
-}
-.profile-social-wrapper .profile-social-accounts {
-  gap: 10px;
-}
-.profile-social-wrapper .profile-social-accounts .social-account-icon {
-  width: 20px;
-  height: 20px;
-}
 
-.profile-action-btns-wrapper {
-  height: 30px;
-}
-.profile-action-btns-wrapper .profile-action-btns .action-btns {
-  height: 45px;
-  width: 45%;
-  gap: 8px;
-  font-size: 12px;
-}
+  .profile-social-wrapper {
+    height: 50px;
+  }
+  .profile-social-wrapper .profile-social-accounts {
+    gap: 10px;
+  }
+  .profile-social-wrapper .profile-social-accounts .social-account-icon {
+    width: 20px;
+    height: 20px;
+  }
 
+  .profile-action-btns-wrapper {
+    height: 30px;
+  }
+  .profile-action-btns-wrapper .profile-action-btns .action-btns {
+    height: 45px;
+    width: 45%;
+    gap: 8px;
+    font-size: 12px;
+  }
 
-.left-nav,
-.right-nav {
-  position: fixed;
-  height: 35%;
-  width: 40px;
-}
+  .left-nav,
+  .right-nav {
+    position: fixed;
+    height: 35%;
+    width: 40px;
+  }
 
-:is(.left-nav, .right-nav) ul li .left-nav-icons {
-  height: 24px;
-  width: 24px;
-}
-
+  :is(.left-nav, .right-nav) ul li .left-nav-icons {
+    height: 24px;
+    width: 24px;
+  }
 }
 .focus {
   color: rgb(137, 164, 244);
