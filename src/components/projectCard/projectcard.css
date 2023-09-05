@@ -47,10 +47,10 @@
   .card-name {
   display: flex;
   width: 100%;
-  color: royalblue;
+  color: black;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 900;
-  font-size: 17px;
+  font-size: 18px;
   padding: 5px 10px;
   border-radius: 0 0 10px 10px;
 }

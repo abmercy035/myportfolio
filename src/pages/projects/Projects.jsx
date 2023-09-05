@@ -1,12 +1,12 @@
 import React from 'react'
-import back_icon from "../../assets/long_left.svg"
-import link_icon from "../../assets/external_link.svg"
-import view_icon from "../../assets/eye.svg"
+import tick_tack_toe_img from "../../assets/tick-tack-toe.png"
+import signup_page from "../../assets/sign-page.png"
+import rock_paper_scissors_img from "../../assets/rock-paper-scissors.png"
 import img1 from "../../assets/web-todoapp.png"
 import img2 from "../../assets/img2.png"
 import img3 from "../../assets/img3.webp"
-import nodejs_icon from "../../assets/node-js.svg"
-import react_icon from "../../assets/react.svg"
+import fullstack_icon from "../../assets/fullstack.svg"
+import fromtend_icon from "../../assets/frontend.svg"
 import javascript_icon from "../../assets/js-square.svg"
 import "./projects.css"
 import { useNavigate } from 'react-router-dom'
@@ -24,11 +24,9 @@ export default function Projects() {
         <GoBackHistoryBar />
         <div className="right-nav">
           <NavBar
-            icon_1={ javascript_icon }
-            action_1={ () => scroller("#js") }
-            action_2={ () => scroller("#react") }
+            action_2={ () => scroller("#frontend") }
             action_3={ () => scroller("#fullstack") }
-            icon_2={ react_icon } icon_3={ nodejs_icon } />
+            icon_2={ fromtend_icon } icon_3={ fullstack_icon } />
         </div>
         <div className="projects-page-intro">
           <div className="projects-page-intro-header">My Projects</div>
@@ -43,42 +41,41 @@ export default function Projects() {
         <div className="projects-wrapper">
           <div className="projects-section" >
             <div className="project-header" >
-              JAVASCRIPT
+              FRONTEND
             </div>
-            <div className="project-details" id="js">
-              Projects built using HTML, CSS, and Vanilla Javascript.
+            <div className="project-details" id="frontend">
+              Projects built using HTML, CSS, and  Vanilla Javascript || React.Js.
             </div>
             <div className="projects">
-              <ProjectCard img={ img2 } text={ "A simple Web Todo App (CRUD), with a persistent memeory using LocalStorage" } />
-              <ProjectCard img={ img2 } text={ "A simple Web Todo App (CRUD), with a persistent memeory using LocalStorage" } />
-              <ProjectCard img={ img2 } text={ "A simple Web Todo App (CRUD), with a persistent memeory using LocalStorage" } />
-
+              <ProjectCard img={ tick_tack_toe_img }
+                liveLink={ "https://abmercy035.github.io/Tick-Tack-Toe-Game/" }
+                gitink={ "https://github.com/abmercy035/Tick-Tack-Toe-Game" }
+                text={ "A Responsive Rock Paper Scissors Game using HTML, CSS and Javascript " } />
+              <ProjectCard img={ signup_page }
+                liveLink={ "https://abmercy035.github.io/rock-paper-scissors-master/" }
+                gitink={ "https://github.com/abmercy035/rock-paper-scissors-master" }
+                text={ "A Responsive Odin Sign up page, Validates Email adress and password length, built using  HTML, CSS and Javascript" } />
+              <ProjectCard img={ rock_paper_scissors_img }
+                liveLink={ "https://abmercy035.github.io/rock-paper-scissors-master/" }
+                gitink={ "https://github.com/abmercy035/rock-paper-scissors-master" }
+                text={ "A Responsive Rock Paper Scissors Game using HTML, CSS and Javascript " } />
+              <ProjectCard img={ img1 }
+                liveLink={ "https://web-todoapp.netlify.app/" }
+                gitLink={ "https://github.com/abmercy035/web-todo-app" }
+                text={ "A simple responsive Web Todo App with CRUD operations and a persistent storage using LocalStorage" } />
             </div>
           </div>
           <div className="projects-section" >
             <div className="project-header">
-              REACT
-            </div>
-            <div className="project-details" id="react">
-              Projects built using HTML, CSS, and React.Js.
-            </div>
-            <div className="projects">
-              <ProjectCard img={ img1 } liveLink={ "http://localhost:5173/" } text={ "A simple responsive Web Todo App with CRUD operations and a persistent storage using LocalStorage" } />
-            </div>
-          </div>
-          <div className="projects-section" >
-            <div className="project-header">
-              FULLSTACK(NODE)
+              FULLSTACK (MERN)
             </div>
             <div className="project-details" id="fullstack">
-              Projects are built using HTML, CSS, React.js and Node (Express, Mongodb incusive).
+              Projects are built using React.js and Node (Express, Mongodb incusive).
             </div>
             <div className="projects">
               <ProjectCard img={ img2 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
               <ProjectCard img={ img3 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
               <ProjectCard img={ img1 } text={ "Lorem ipsum dolor sit amet consectetur.." } />
-
-
             </div>
           </div>
         </div>
