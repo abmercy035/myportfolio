@@ -11,7 +11,7 @@ import mail from "../assets/mail.svg"
 import about_icon from "../assets/user.svg"
 import briefcase_icon from "../assets/briefcase.svg"
 import background_icon from "../assets/backgrounds.png"
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import NavBar from '../components/NavBar'
 export default function HomePage() {
   const navigate = useNavigate();
@@ -31,7 +31,7 @@ export default function HomePage() {
           icon_2={ background_icon } icon_3={ mail } />
       </div>
       <div className="center">
-        <div className="my-profile-wrapper"> 
+        <div className="my-profile-wrapper">
           <div className="profile-img-wrapper">
             <img src={ profile_img } alt="" className='profile-img' />
           </div>
@@ -41,10 +41,18 @@ export default function HomePage() {
           </div>
           <div className="profile-social-wrapper">
             <div className="profile-social-accounts">
-              <img src={ linkedin_icon } alt="" className="social-account-icon" />
-              <img src={ twitter_icon } alt="" className="social-account-icon" />
-              <img src={ instagram_icon } alt="" className="social-account-icon" />
-              <img src={ git_icon } alt="" className="social-account-icon" />
+              <Link to="https://www.linkedin.com/in/javascriptenthusiat/" target="_blank">
+                <img src={ linkedin_icon } alt="" className="social-account-icon" />
+              </Link>
+              <Link to="https://twitter.com/DevAbraham035" target="_blank">
+                <img src={ twitter_icon } alt="" className="social-account-icon" />
+              </Link>
+              <Link to="https://www.instagram.com/developer_abraham/" target="_blank">
+                <img src={ instagram_icon } alt="" className="social-account-icon" />
+              </Link>
+              <Link to="https://github.com/abmercy035/" target="_blank">
+                <img src={ git_icon } alt="" className="social-account-icon" />
+              </Link>
             </div>
           </div>
           <div className="profile-action-btns-wrapper">
