@@ -21,10 +21,17 @@ export default function HomePage() {
     const data = [ new ClipboardItem({ [ type ]: blob }) ];
     navigator.clipboard.write(data).then(
       () => {
-        // /* success */
+        document.querySelector("#pop-alert").style.display = "flex"
+        document.querySelector("#pop-alert").textContent = "Link Copied"
+        setTimeout(() => {
+          document.querySelector("#pop-alert").style.display = "none"
+        }, 1000)
       },
       () => {
-        /* failure */
+        setTimeout(() => {
+          document.querySelector("#pop-alert").style.display = "none"
+          document.querySelector("#pop-alert").textContent = "Sorry Link was unable Copied https://javascript-enthusiast.onrender.com/"
+        }, 7000)
       }
     );
   }
@@ -46,7 +53,7 @@ export default function HomePage() {
           icon_2={ background_icon } icon_3={ mail } />
       </div>
       <div id="pop-alert">
-        hello
+        Link Copied
       </div>
       <div className="center">
         <div className="my-profile-wrapper">
@@ -75,7 +82,7 @@ export default function HomePage() {
           </div>
           <div className="profile-action-btns-wrapper">
             <div className="profile-action-btns">
-              <div className="action-btns">
+              <div className="action-btns" onClick={ () => setClipboard("https://javascript-enthusiast.onrender.com/") }>
                 Portifolio Link
                 <img src={ link_icon } alt="" />
               </div>

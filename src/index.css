@@ -97,6 +97,20 @@ a {
   justify-content: center;
   cursor: pointer;
 }
+#pop-alert {
+  display: none;
+  position: fixed;
+  bottom: 35%;
+  left: calc(50% - 70px);
+  z-index: 200;
+  height: 50px;
+  width: 140px;
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  border: 1px white double;
+  border-radius: 3px;
+}
 
 .center {
   width: 100%;
@@ -105,7 +119,7 @@ a {
   flex-direction: column;
   /* From https://css.glass */
   background: rgba(0, 0, 0, 0.58);
-  border-radius: 16px;
+  /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(5.3px);
