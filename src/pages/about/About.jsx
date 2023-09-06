@@ -29,16 +29,18 @@ export default function About() {
         </div>
         <div className="about-page-intro-text">
           <p>
-            I'm Abraham Samuel Bamidele, and I'm passionate about the world of technology and programming. As a Fullstack Developer specializing in JavaScript, I thrive on the ever-evolving nature of this field. I believe in the power of continuous learning and have made it my primary focus to acquire the skills necessary for my personal growth and development.
+            I'm Abraham Samuel Bamidele, a passionate JavaScript Developer with expertise in ReactJs and Nodejs inclusive, driven by a love for continuous learning and sharing knowledge. My journey is defined by a commitment to building a better society through technology. I thrive in the ever-evolving field of software development and believe in the power of ongoing learning to fuel my personal growth and development.
+          </p>
+
+          <p>
+            With a solid background in software engineering, I bring extensive expertise to develop advanced software solutions. I possess a comprehensive understanding of cutting-edge technologies, frameworks, and methodologies, enabling me to excel in designing and delivering efficient, high-quality software applications. Collaboration is a cornerstone of my approach, as I actively engage with cross-functional teams to ensure seamless integration and successful project outcomes. I'm deeply committed to staying at the forefront of industry trends and continually expanding my skill set through ongoing learning and professional development.
           </p>
           {/* <p>Driven by my love for moral and decent society and generation. I firmly believe that knowledge is most valuable when it's shared and imparted, and I take great joy in helping others understand complex concepts and navigate the world of programming.</p> */ }
           <p>
-            In a world that relies on technology more than ever, I am committed to using my skills and passion for programming to create meaningful change and foster a culture of continuous learning and knowledge dissemination. May God help me on this exciting journey of discovery and innovation!
-          </p>
-          <p>
             <h3>My Interest Includes</h3>
             <div>
-              Software Engineering | Complex Problem-solving | Client Satisfaction | Team Collaboration | Continuous Improvement
+              Software Engineering | Complex Problem-solving | Client Satisfaction | Team Collaboration | Continuous Improvement | Knowledge Management/Sharing
+
             </div>
           </p>
         </div>

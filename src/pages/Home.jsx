@@ -13,7 +13,22 @@ import briefcase_icon from "../assets/briefcase.svg"
 import background_icon from "../assets/backgrounds.png"
 import { Link, useNavigate } from 'react-router-dom'
 import NavBar from '../components/NavBar'
+import curriculum_vitae from "../assets/files/Samuel Abraham curriculum vitae.docx"
 export default function HomePage() {
+  function setClipboard(text) {
+    const type = "text/plain";
+    const blob = new Blob([ text ], { type });
+    const data = [ new ClipboardItem({ [ type ]: blob }) ];
+    navigator.clipboard.write(data).then(
+      () => {
+        // /* success */
+      },
+      () => {
+        /* failure */
+      }
+    );
+  }
+
   const navigate = useNavigate();
   return (
     <div className='home-page'>
@@ -29,6 +44,9 @@ export default function HomePage() {
           action_2={ () => navigate("/background") }
           action_1={ () => navigate("/experince") }
           icon_2={ background_icon } icon_3={ mail } />
+      </div>
+      <div id="pop-alert">
+        hello
       </div>
       <div className="center">
         <div className="my-profile-wrapper">
@@ -62,8 +80,11 @@ export default function HomePage() {
                 <img src={ link_icon } alt="" />
               </div>
               <div className="action-btns">
-                Download CV
-                <img src="" alt="" />
+                <Link to={ "../assets/files/Samuel Abraham curriculum vitae.docx" } download="Samuel_Abraham_CV" target="_blank" rel="noreferrer"
+                >
+                  Download CV
+                  <img src="" alt="" />
+                </Link>
               </div>
             </div>
           </div>

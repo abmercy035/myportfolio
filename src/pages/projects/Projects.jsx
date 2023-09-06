@@ -52,8 +52,8 @@ export default function Projects() {
                 gitink={ "https://github.com/abmercy035/Tick-Tack-Toe-Game" }
                 text={ "A Responsive Rock Paper Scissors Game using HTML, CSS and Javascript " } />
               <ProjectCard img={ signup_page }
-                liveLink={ "https://abmercy035.github.io/rock-paper-scissors-master/" }
-                gitink={ "https://github.com/abmercy035/rock-paper-scissors-master" }
+                liveLink={ "https://abmercy035.github.io/formValidation/" }
+                gitink={ "https://github.com/abmercy035/formValidation" }
                 text={ "A Responsive Odin Sign up page, Validates Email adress and password length, built using  HTML, CSS and Javascript" } />
               <ProjectCard img={ rock_paper_scissors_img }
                 liveLink={ "https://abmercy035.github.io/rock-paper-scissors-master/" }
