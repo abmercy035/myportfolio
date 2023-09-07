@@ -424,3 +424,9 @@ a {
   /* color: tomato; */
   scale: 1.05;
 }
+
+
+.hide{
+display:none !important;
+
+}

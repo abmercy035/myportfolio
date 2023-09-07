@@ -97,7 +97,7 @@ export default function HomePage() {
           </div>
           <div className="profile-name-wrapper">
             <span className="profile-name">Samuel Abraham</span>
-            <span className="profile-bio"> Mern-stack | Developer | Innovator | Engineer{/* | <span className="focus">Founder@Learnard</span>*/ } | Wiki-Editor</span>
+            <span className="profile-bio">React Developer | Innovator | Engineer{/* | <span className="focus">Founder@Learnard</span>*/ } | Wiki-Editor</span>
             <span className="profile-bio"> abmercy035@gmail.com | +2347026889064</span>
           </div>
           <div className="profile-social-wrapper">

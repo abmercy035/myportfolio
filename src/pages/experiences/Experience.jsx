@@ -19,7 +19,7 @@ export default function Experience() {
     </div>
     <div className="experience-page-intro-text">
      <p>
-      A passionate Fullstack Developer with expertise in JavaScript. My journey is defined by a love for continuous learning, sharing knowledge, and a commitment to building a better society through technology. Let's embark on this journey of innovation together.
+      A passionate JavaScript Developer with expertise in ReactJs and Nodejs inclusive, driven by a love for continuous learning and sharing knowledge. My journey is defined by a commitment to building a better society through technology. I thrive in the ever-evolving field of software development and believe in the power of ongoing learning to fuel my personal growth and development.
      </p>
     </div>
    </div>

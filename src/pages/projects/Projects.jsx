@@ -22,7 +22,7 @@ export default function Projects() {
     <>
       <div className='projects-page'>
         <GoBackHistoryBar />
-        <div className="right-nav">
+        <div className="right-nav hide">
           <NavBar
             action_2={ () => scroller("#frontend") }
             action_3={ () => scroller("#fullstack") }
@@ -65,7 +65,7 @@ export default function Projects() {
                 text={ "A simple responsive Web Todo App with CRUD operations and a persistent storage using LocalStorage" } />
             </div>
           </div>
-          <div className="projects-section" >
+          <div className="projects-section hide" >
             <div className="project-header">
               FULLSTACK (MERN)
             </div>
