@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import profile_img from "../assets/myprofile.jpg"
 import linkedin_icon from "../assets/linkedin-in.svg"
 import twitter_icon from "../assets/twitter.svg"
@@ -13,9 +13,35 @@ import briefcase_icon from "../assets/briefcase.svg"
 import background_icon from "../assets/backgrounds.png"
 import { Link, useNavigate } from 'react-router-dom'
 import NavBar from '../components/NavBar'
-import curriculum_vitae from "../assets/files/Samuel Abraham curriculum vitae.docx"
+import curriculum_vitae from "/files/Samuel Abraham curriculum vitae.docx"
+
 export default function HomePage() {
+  const randomQuotes = () => {
+    fetch('/files/quotes.json').then(res => res.json()).then((data) => {
+      const quote = data[ Math.floor(Math.random() * data.length) ]
+      document.querySelector("#quote-text").textContent = quote.text
+      document.querySelector("#quote-author").textContent = quote.author
+      document.querySelector(".quotes").style.display = "flex"
+    })
+  }
+
+  function download() {
+    var element = document.createElement('a');
+    element.setAttribute('href', curriculum_vitae);
+    element.setAttribute('download', "Samuel_Abraham_CV");
+    element.setAttribute('rel', "noreferrer");
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    document.querySelector("#pop-alert").style.display = "flex"
+    document.querySelector("#pop-alert").textContent = "downloading should start in 3secs"
+    element.click();
+    setTimeout(() => {
+      document.querySelector("#pop-alert").style.display = "none"
+    }, 4000)
+    document.body.removeChild(element);
+  }
   function setClipboard(text) {
+
     const type = "text/plain";
     const blob = new Blob([ text ], { type });
     const data = [ new ClipboardItem({ [ type ]: blob }) ];
@@ -43,6 +69,7 @@ export default function HomePage() {
         <NavBar icon_1={ about_icon }
           action_1={ () => navigate("/about-me") }
           action_2={ () => navigate("/projects") }
+          action_3={ () => randomQuotes("/projects") }
           icon_2={ projects_icon } icon_3={ bulb_icon } />
       </div>
       <div className="right-nav">
@@ -55,6 +82,14 @@ export default function HomePage() {
       <div id="pop-alert">
         Link Copied
       </div>
+      <div className="quotes timing">
+        <span className='close' onClick={ () => document.querySelector(".quotes").style.display = "none" }>X</span>
+        <h5>
+          <q id='quote-text'>The best way to predict the future is to create it.</q>
+        </h5>
+
+        <span id='quote-author'>Learnard</span>
+      </div>
       <div className="center">
         <div className="my-profile-wrapper">
           <div className="profile-img-wrapper">
@@ -62,7 +97,8 @@ export default function HomePage() {
           </div>
           <div className="profile-name-wrapper">
             <span className="profile-name">Samuel Abraham</span>
-            <span className="profile-bio"> Mern-stack | Developer | Innovator | Engineer{/* | <span className="focus">Founder@Learnard</span>*/ } | Wiki-Editor | Scratch</span>
+            <span className="profile-bio"> Mern-stack | Developer | Innovator | Engineer{/* | <span className="focus">Founder@Learnard</span>*/ } | Wiki-Editor</span>
+            <span className="profile-bio"> abmercy035@gmail.com | +2347026889064</span>
           </div>
           <div className="profile-social-wrapper">
             <div className="profile-social-accounts">
@@ -86,12 +122,11 @@ export default function HomePage() {
                 Portifolio Link
                 <img src={ link_icon } alt="" />
               </div>
-              <div className="action-btns">
-                <Link to={ "../assets/files/Samuel Abraham curriculum vitae.docx" } download="Samuel_Abraham_CV" target="_blank" rel="noreferrer"
-                >
-                  Download CV
-                  <img src="" alt="" />
-                </Link>
+              <div className="action-btns" onClick={ download }>
+
+                Download CV
+                <img src="" alt="" />
+
               </div>
             </div>
           </div>
