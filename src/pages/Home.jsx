@@ -13,7 +13,7 @@ import briefcase_icon from "../assets/briefcase.svg"
 import background_icon from "../assets/backgrounds.png"
 import { Link, useNavigate } from 'react-router-dom'
 import NavBar from '../components/NavBar'
-import curriculum_vitae from "/files/Samuel Abraham curriculum vitae.docx"
+import curriculum_vitae from "/files/Samuel Abraham curriculum vitae.pdf"
 
 export default function HomePage() {
   const randomQuotes = () => {
